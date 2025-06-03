@@ -1,4 +1,4 @@
-package com.hcltech.jobhunt_mongodb;
+package com.hcltech.jobhunt_mongodb.controller;
 
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,6 +9,7 @@ import java.io.IOException;
 @RestController
 public class HuntController
 {
+    
     @RequestMapping(value="/")
     public void redirect(HttpServletResponse response) throws IOException {
         response.sendRedirect("/swagger-ui.html");
