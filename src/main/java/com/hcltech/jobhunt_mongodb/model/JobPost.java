@@ -1,9 +1,14 @@
 package com.hcltech.jobhunt_mongodb.model;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.Arrays;
+
+//@Document(collection = "jobhunt")
 public class JobPost {
+    private String profile;
     private String desc;
     private int exp;
-    private String profile;
     private String[] techs;
 
     public String getDesc() {
@@ -36,5 +41,15 @@ public class JobPost {
 
     public void setTechs(String[] techs) {
         this.techs = techs;
+    }
+
+    @Override
+    public String toString() {
+        return "JobPost{" +
+                "profile='" + profile + '\'' +
+                ", desc='" + desc + '\'' +
+                ", exp=" + exp +
+                ", techs=" + Arrays.toString(techs) +
+                '}';
     }
 }
