@@ -6,10 +6,19 @@ import java.util.Arrays;
 
 @Document(collection = "jobhunt")
 public class JobPost {
+    private String id;
     private String profile;
     private String desc;
     private int exp;
     private String[] techs;
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
 
     public String getDesc() {
         return desc;
