@@ -28,7 +28,7 @@ src/
 │ ├── service
 │ └── security
 └── resources/
-└── application.properties
+  └── application.properties
 
 
 ---
@@ -51,9 +51,10 @@ src/
 |------------------|--------|--------------------------|---------------|
 | `/auth/register` | POST   | Register a new user      | ❌ No         |
 | `/auth/login`    | POST   | Login and get JWT token  | ❌ No         |
-| `/users/me`      | GET    | Get current user details | ✅ Yes        |
-
-📝 _You can expand this list later with endpoints like `/jobs`, `/applications`, etc._
+| `/jobpost `      | GET    | Get current user details | ✅ Yes        |
+| `/jobposts`      | GET    | Get current user details | ✅ Yes        |
+| `/jobposts/{id}` | GET    | Get current user details | ✅ Yes        |
+|`/jobposts/{text}`| GET    | Get current user details | ✅ Yes        |
 
 ---
 
